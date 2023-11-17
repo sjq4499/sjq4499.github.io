@@ -29,6 +29,10 @@ createApp({
         title: '惠惠宝贝',
         url: 'https://sjq4499.github.io/vite-vue3/#/swiper',
       },
+      {
+        title: '倒计时',
+        url: 'https://sjq4499.github.io/view/time/index.html',
+      },
     ]);
     return {
       message,

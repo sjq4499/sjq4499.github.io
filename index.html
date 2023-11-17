@@ -9,16 +9,27 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="renderer" content="webkit">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
   <title>欢迎</title>
   <link rel="stylesheet" type="text/css" href="./css/index.css" />
   <script src="./storeJs/vue@3.3.8.js"></script>
+  <style>
+    #app {
+      text-align: center;
+    }
+
+    .data-list {
+      justify-content: center;
+    }
+  </style>
 </head>
 
 <body>
   <div id="app">
-    <h1>{{ message }}❤️❤️❤️</h1>
+    <h1>{{ message }}</h1>
     <div v-for="(item,index) in list" :key="index" class="data-list">
       <a :href="item.url">❤️❤️❤️{{item.title}}❤️❤️❤️</a>
     </div>
