@@ -92,3 +92,10 @@ li {
 }
 
 
+.data-list{
+  display: flex;
+  line-height: 20px;
+  padding:0 20px;
+  font-size: 16px;
+  margin: 10px 0 ;
+}

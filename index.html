@@ -3,7 +3,7 @@
  * @Author: sjq
  * @Date: 2023-11-10 14:11:25
  * @LastEditors: sjq
- * @LastEditTime: 2023-11-10 14:34:34
+ * @LastEditTime: 2023-11-16 09:16:41
 -->
 <!DOCTYPE html>
 <html lang="en">
@@ -12,21 +12,19 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>欢迎</title>
-  <link rel="stylesheet" type="text/css" href="index/index.css" />
+  <link rel="stylesheet" type="text/css" href="./css/index.css" />
+  <script src="./storeJs/vue@3.3.8.js"></script>
 </head>
 
 <body>
-  <div>
-    欢迎
+  <div id="app">
+    <h1>{{ message }}❤️❤️❤️</h1>
+    <div v-for="(item,index) in list" :key="index" class="data-list">
+      <a :href="item.url">❤️❤️❤️{{item.title}}❤️❤️❤️</a>
+    </div>
   </div>
-  <a href="https://sjq4499.github.io/lovehui/christmas/index.html">圣诞节</a>
-  <!-- 520爱心背景表白网页动画特效 -->
-  <a href="https://sjq4499.github.io/lovehui/lovevg/index.html">背景版</a>
-
-  <a href="https://sjq4499.github.io/jobIntroduction">工作介绍</a>
-  <a href="https://sjq4499.github.io/web-vue2/#/love?name=%E6%83%A0%E6%83%A0%E5%AE%9D%E8%B4%9D">惠惠宝贝</a>
-  <a href="https://sjq4499.github.io/vite-vue3/#/xiaoyi1">惠惠</a>
-  <a href="https://sjq4499.github.io/vite-vue3/#/swiper">惠惠</a>
+  <script src="./js/utils.js"></script>
+  <script src="./js/index.js"></script>
 </body>
 
 </html>
